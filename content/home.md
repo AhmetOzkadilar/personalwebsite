@@ -1,5 +1,5 @@
 +++
-title = "Ahmet Ozkadilar"
+title = "blog"
 tags = [
     "go",
     "golang",
@@ -8,7 +8,5 @@ tags = [
     "development",
 ]
 date = "2014-04-02"
-draft = false
 +++
-
-Some post content
+# H1
