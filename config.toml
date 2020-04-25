@@ -52,9 +52,3 @@ theme        = "hello-friend-ng"
     identifier = "blog"
     name       = "Blog"
     url        = "/posts"
-
-  # And you can even create generic menu
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "about.md"
