@@ -1,25 +1,7 @@
-baseURL = "https://www.ahmetozkadilar.com/"
+baseurl      = "https://www.ahmetozkadilar.com"
+title        = "Ahmet Ozkadilar"
 languageCode = "en-us"
-title = "Ahmet Ozkadilar"
-theme = "hermit"
-# enableGitInfo = true
-pygmentsCodefences  = true
-pygmentsUseClasses  = true
-# hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
-rssLimit = 10  # Maximum number of items in the RSS feed.
-enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
-# googleAnalytics = "UA-123-45"
-# disqusShortname = "yourdiscussshortname"
-[author]
-  name = "Ahmet Ozkadilar"
-[blackfriday]
-  # hrefTargetBlank = true
-  # noreferrerLinks = true
-  # nofollowLinks = true
-
-[taxonomies]
-  tag = "tags"
-  # Categories are disabled by default.
+theme        = "hello-friend-ng"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -27,49 +9,52 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
+  # Subtitle for home
+  homeSubtitle = "A simple and beautiful blog"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
   # Metadata mostly used in document's head
-  # description = ""
-  # images = [""]
-  themeColor = "#494f5c"
-  homeSubtitle = "A minimal and fast theme for Hugo."
-  footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-  # bgImg = ""  # Homepage background-image URL
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
 
-  # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  # gitUrl = "https://github.com/username/repository/commit/"
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
 
-  # Toggling this option needs to rebuild SCSS, requires Hugo extended version
-  justifyContent = false  # Set "text-align: justify" to `.content`.
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
 
-  relatedPosts = false  # Add a related content section to all single posts page
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
 
-  code_copy_button = true # Turn on/off the code-copy-button for code-fields
-  
-  # Add custom css
-  # customCSS = ["css/foo.css", "css/bar.css"]
+[languages]
+  [languages.en]
+    title = "Hello Friend NG"
+    subtitle = "A simple theme for Hugo"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
 
-  # Social Icons
-  # Check https://github.com/Track3/hermit#social-icons for more info.
-  [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/"
+    [languages.en.params.logo]
+      logoText = "hello friend ng"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
 
-  [[params.social]]
-    name = "instagram"
-    url = "https://instagram.com/"
-
-  [[params.social]]
-    name = "github"
-    url = "https://github.com/"
-
-[menu]
-
+  # And you can even create generic menu
   [[menu.main]]
-    name = "Posts"
-    url = "posts/"
-    weight = 10
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
 
+  # And you can even create generic menu
   [[menu.main]]
-    name = "About"
-    url = "about/"
-    weight = 20
+    identifier = "about"
+    name       = "About"
+    url        = "about.md"
